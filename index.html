@@ -1,0 +1,59 @@
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="script.js"></script>
+  </head>
+  <body onload="startGame()">
+    <div id="gameEnd"></div>
+    <table>
+      <tr>
+        <td>
+          <button onclick="playerMove(event,0,0)"></button>
+        </td>
+        <td class="vmiddle">
+          <button onclick="playerMove(event,1,0)"></button>
+        </td>
+        <td>
+          <button onclick="playerMove(event,2,0)"></button>
+        </td>
+      </tr>
+      <tr class="hmiddle">
+        <td>
+          <button onclick="playerMove(event,0,1)"></button>
+        </td>
+        <td class="vmiddle">
+          <button onclick="playerMove(event,1,1)"></button>
+        </td>
+        <td>
+          <button onclick="playerMove(event,2,1)"></button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="playerMove(event,0,2)"></button>
+        </td>
+        <td class="vmiddle">
+          <button onclick="playerMove(event,1,2)"></button>
+        </td>
+        <td>
+          <button onclick="playerMove(event,2,2)"></button>
+        </td>
+      </tr>
+    </table>
+    <center>
+      <p id="turnDisplay"></p>
+      <button id="restartButton" onclick="document.location.reload(true);">Start A New Game</button>
+    </center>
+    <footer>
+      <p>Tic Tac Toe created by Wesley Branton</p>
+    </footer>
+  </body>
+</html>

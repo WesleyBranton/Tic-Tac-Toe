@@ -1,0 +1,84 @@
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
+
+/* Board Design */
+table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+td button {
+  background: white;
+  border: none;
+  color: #F2F2F2;
+  font: normal 70px cursive;
+  height: 100px;
+  transition: all .5s ease;
+  width: 100px;
+}
+
+td button:enabled:hover {
+  background: #F2F2F2;
+  cursor: pointer;
+}
+
+.hmiddle {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+}
+
+.vmiddle {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+/* Player Turn Display */
+#turnDisplay {
+  color: white;
+  cursor: default;
+  font: normal 20px sans-serif;
+  margin: 10px;
+  text-align: center;
+  transition: all .3s ease;
+}
+
+/* Restart Button */
+#restartButton {
+  background: gold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: none;
+  font: normal 20px sans-serif;
+  padding: 10px;
+  transition: all .5s ease;
+  z-index: 1;
+}
+
+#restartButton:hover {
+  background: darkgoldenrod;
+}
+
+/* End Of Game Overlay */
+#gameEnd {
+  display: none;
+  height: 350px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* General Styling */
+footer {
+  background: lightgray;
+  bottom: 0;
+  cursor: default;
+  font: normal 10px sans-serif;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
